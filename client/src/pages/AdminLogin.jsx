@@ -4,8 +4,8 @@ import { Shield, Lock, User, AlertCircle, KeyRound, CheckCircle } from 'lucide-r
 
 export default function AdminLogin({ setCurrentPage }) {
   const { login, loading } = useAuth();
-  const [usernameOrEmail, setUsernameOrEmail] = useState('admin');
-  const [password, setPassword] = useState('TridentAdmin@2026!');
+  const [usernameOrEmail, setUsernameOrEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
@@ -56,7 +56,7 @@ export default function AdminLogin({ setCurrentPage }) {
                 value={usernameOrEmail}
                 onChange={(e) => setUsernameOrEmail(e.target.value)}
                 required
-                placeholder="admin"
+                placeholder="Enter admin username or email"
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-pinkTheme-50/50 dark:bg-navy-950 border border-pinkTheme-200 dark:border-white/10 text-black dark:text-white focus:outline-none focus:border-primary-500 focus:bg-white text-xs"
               />
             </div>
@@ -73,7 +73,7 @@ export default function AdminLogin({ setCurrentPage }) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                placeholder="••••••••••••"
+                placeholder="Enter admin password"
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-pinkTheme-50/50 dark:bg-navy-950 border border-pinkTheme-200 dark:border-white/10 text-black dark:text-white focus:outline-none focus:border-primary-500 focus:bg-white text-xs"
               />
             </div>
@@ -88,14 +88,10 @@ export default function AdminLogin({ setCurrentPage }) {
           </button>
         </form>
 
-        {/* Demo Credentials Helper */}
-        <div className="p-3.5 rounded-xl bg-pinkTheme-50 dark:bg-navy-950 border border-pinkTheme-200 dark:border-white/10 text-[11px] text-slate-700 dark:text-slate-400 space-y-1">
-          <p className="font-bold text-black dark:text-slate-200 flex items-center">
-            <Shield className="w-3.5 h-3.5 text-primary-600 mr-1" />
-            Default Administrator Credentials:
-          </p>
-          <p>User: <span className="font-mono text-primary-700 dark:text-primary-400 font-bold">admin</span></p>
-          <p>Password: <span className="font-mono text-primary-700 dark:text-primary-400 font-bold">TridentAdmin@2026!</span></p>
+        {/* Security Badge */}
+        <div className="p-3 rounded-xl bg-slate-50 dark:bg-navy-950/60 border border-slate-200/80 dark:border-white/5 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-center space-x-2">
+          <Shield className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+          <span>Protected by AES-256 encryption & active lockout defense</span>
         </div>
 
       </div>
