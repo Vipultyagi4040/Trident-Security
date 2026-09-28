@@ -16,29 +16,29 @@ export default function AdminLogin({ setCurrentPage }) {
     if (res.success) {
       setCurrentPage('admin');
     } else {
-      setError(res.message || 'Invalid administrator credentials.');
+      setError(res.message || 'Invalid administrator credentials. Please check your username/password.');
     }
   };
 
   return (
     <div className="min-h-[75vh] flex items-center justify-center px-4 py-12">
-      <div className="max-w-md w-full rounded-3xl bg-white dark:bg-navy-900 border-2 border-pinkTheme-200/90 dark:border-white/10 shadow-2xl p-8 space-y-6">
-        
+      <div className="max-w-md w-full rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-white/10 shadow-2xl p-8 space-y-6">
+
         {/* Brand Header */}
         <div className="text-center space-y-2">
-          <div className="w-16 h-16 bg-pinkTheme-100 border border-pinkTheme-200 text-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-2 shadow-sm">
+          <div className="w-16 h-16 bg-primary-500/10 border border-primary-500/20 text-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-2 shadow-sm">
             <Lock className="w-8 h-8" />
           </div>
-          <h2 className="font-heading font-black text-2xl text-black dark:text-white">
+          <h2 className="font-heading font-extrabold text-2xl text-slate-900 dark:text-white">
             Command Center Login
           </h2>
-          <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">
+          <p className="text-xs text-slate-500 dark:text-slate-400">
             Authorized Personnel Access Only • SSL 256-Bit Encrypted
           </p>
         </div>
 
         {error && (
-          <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-600 text-xs flex items-center">
+          <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-500 text-xs flex items-center">
             <AlertCircle className="w-4 h-4 mr-2 flex-shrink-0" />
             <span>{error}</span>
           </div>
@@ -46,7 +46,7 @@ export default function AdminLogin({ setCurrentPage }) {
 
         <form onSubmit={handleSubmit} className="space-y-4 text-xs">
           <div>
-            <label className="block font-bold text-slate-800 dark:text-slate-300 mb-1.5">
+            <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
               Username or Email
             </label>
             <div className="relative">
@@ -56,14 +56,14 @@ export default function AdminLogin({ setCurrentPage }) {
                 value={usernameOrEmail}
                 onChange={(e) => setUsernameOrEmail(e.target.value)}
                 required
-                placeholder="Enter admin username or email"
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-pinkTheme-50/50 dark:bg-navy-950 border border-pinkTheme-200 dark:border-white/10 text-black dark:text-white focus:outline-none focus:border-primary-500 focus:bg-white text-xs"
+                placeholder="Enter username or email"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white focus:outline-none focus:border-primary-500 text-xs"
               />
             </div>
           </div>
 
           <div>
-            <label className="block font-bold text-slate-800 dark:text-slate-300 mb-1.5">
+            <label className="block font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
               Password
             </label>
             <div className="relative">
@@ -73,8 +73,8 @@ export default function AdminLogin({ setCurrentPage }) {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                placeholder="Enter admin password"
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-pinkTheme-50/50 dark:bg-navy-950 border border-pinkTheme-200 dark:border-white/10 text-black dark:text-white focus:outline-none focus:border-primary-500 focus:bg-white text-xs"
+                placeholder="••••••••••••"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white focus:outline-none focus:border-primary-500 text-xs"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function AdminLogin({ setCurrentPage }) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3.5 rounded-xl bg-primary-600 hover:bg-primary-500 text-white font-bold text-sm shadow-lg shadow-primary-500/25 flex items-center justify-center transition-all cursor-pointer disabled:opacity-50"
+            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-600 text-white font-bold text-sm shadow-lg shadow-primary-500/25 flex items-center justify-center transition-all cursor-pointer disabled:opacity-50"
           >
             {loading ? 'Authenticating Officer...' : 'Authorize & Enter Command Center'}
           </button>
