@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CLIENTS_DATA } from '../data/servicesData';
+import ClientLogo from './ClientLogo';
 import { Sparkles, CheckCircle2, LayoutGrid, Award, ShieldCheck, Building2 } from 'lucide-react';
 
 export default function ClientsCarousel() {
@@ -80,16 +81,12 @@ export default function ClientsCarousel() {
                     className="group flex flex-col items-center p-5 sm:p-6 rounded-2xl bg-pinkTheme-50/40 hover:bg-white dark:bg-navy-950 dark:hover:bg-navy-800 border-2 border-pinkTheme-200/80 dark:border-white/10 hover:border-primary-500 shadow-sm hover:shadow-2xl transition-all duration-300 flex-shrink-0 cursor-default w-[280px] sm:w-[320px]"
                   >
                     {/* Extra-Large High-Impact Logo Display Stage */}
-                    <div className="w-full h-32 sm:h-36 rounded-2xl bg-white p-4 flex items-center justify-center border-2 border-pinkTheme-200/70 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
-                      <img
-                        src={client.logo}
-                        alt={client.name}
-                        loading="lazy"
-                        className="max-h-full max-w-full w-auto h-auto object-contain transition-all"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.parentNode.innerHTML = `<div class="text-sm font-black text-slate-800 text-center uppercase tracking-wider">${client.name}</div>`;
-                        }}
+                    <div className="w-full h-32 sm:h-36 rounded-2xl bg-white p-3 flex items-center justify-center border-2 border-pinkTheme-200/70 shadow-md group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                      <ClientLogo
+                        id={client.id}
+                        name={client.name}
+                        category={client.category}
+                        className="w-full h-full object-contain"
                       />
                     </div>
 
@@ -153,16 +150,12 @@ export default function ClientsCarousel() {
                   key={client.id}
                   className="group p-6 rounded-3xl bg-white dark:bg-navy-900 border-2 border-pinkTheme-200/90 dark:border-white/10 hover:border-primary-500 shadow-card-light dark:shadow-card-dark hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center space-y-4"
                 >
-                  <div className="w-full h-36 rounded-2xl bg-white p-4 flex items-center justify-center border-2 border-pinkTheme-200/80 shadow-md group-hover:scale-105 transition-transform overflow-hidden">
-                    <img
-                      src={client.logo}
-                      alt={client.name}
-                      loading="lazy"
-                      className="max-h-full max-w-full w-auto h-auto object-contain"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.parentNode.innerHTML = `<div class="text-sm font-black text-slate-800 uppercase tracking-wider">${client.name}</div>`;
-                      }}
+                  <div className="w-full h-36 rounded-2xl bg-white p-3 flex items-center justify-center border-2 border-pinkTheme-200/80 shadow-md group-hover:scale-105 transition-transform overflow-hidden">
+                    <ClientLogo
+                      id={client.id}
+                      name={client.name}
+                      category={client.category}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <div className="space-y-1.5 w-full">

@@ -192,7 +192,7 @@ export const CERTIFICATES_DATA = [
     name: 'ISO 9001:2015',
     title: 'Quality Management System Certification',
     issuer: 'International Organization for Standardization',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/ISO-9001.png',
+    badge: '/images/certificates/iso-9001.svg',
     description: 'Certified standard for operational excellence, high service reliability, and stringent guard deployment protocols.'
   },
   {
@@ -200,7 +200,7 @@ export const CERTIFICATES_DATA = [
     name: 'IAF Accreditation',
     title: 'International Accreditation Forum',
     issuer: 'IAF Global Multilateral Agreement',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/IAF-ISO.png',
+    badge: '/images/certificates/iaf-iso.svg',
     description: 'International recognition affirming our compliance with global quality and safety benchmarks.'
   },
   {
@@ -208,7 +208,7 @@ export const CERTIFICATES_DATA = [
     name: 'MP PSARA License',
     title: 'Madhya Pradesh Private Security Agencies Regulation Act',
     issuer: 'Govt. of Madhya Pradesh - Home Department',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/MP-PSARA.png',
+    badge: '/images/certificates/mp-psara.svg',
     description: 'Official statutory government license authorizing private manned and armed security operations across Madhya Pradesh.'
   },
   {
@@ -216,7 +216,7 @@ export const CERTIFICATES_DATA = [
     name: 'MSME Registered',
     title: 'Ministry of Micro, Small and Medium Enterprises',
     issuer: 'Government of India',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/MSME.png',
+    badge: '/images/certificates/msme.svg',
     description: 'Government recognized enterprise under the Ex-Servicemen and Security Services entrepreneurship wing.'
   },
   {
@@ -224,7 +224,7 @@ export const CERTIFICATES_DATA = [
     name: 'ESIC & EPFO Compliant',
     title: 'Employee State Insurance & Provident Fund',
     issuer: 'Ministry of Labour & Employment, India',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/ESIC.png',
+    badge: '/images/certificates/esic-epfo.svg',
     description: '100% labor law compliance ensuring full medical insurance, social security, and prompt statutory payouts for all deployed personnel.'
   },
   {
@@ -232,7 +232,7 @@ export const CERTIFICATES_DATA = [
     name: 'GST Registered',
     title: 'Goods and Services Tax Authority',
     issuer: 'Ministry of Finance, Govt of India',
-    badge: 'https://tridentsecuritys.com/wp-content/uploads/2023/09/GST-LOGO.png',
+    badge: '/images/certificates/gst.svg',
     description: 'Fully compliant tax and corporate invoicing with official input tax credit provisioning for commercial clients.'
   }
 ];

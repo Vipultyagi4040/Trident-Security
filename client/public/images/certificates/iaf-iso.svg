@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iafBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="iafGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Badge Ring -->
+  <circle cx="100" cy="100" r="94" fill="url(#iafBg)" stroke="url(#iafGold)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#6EE7B7" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Center White Disc -->
+  <circle cx="100" cy="100" r="62" fill="#FFFFFF"/>
+  
+  <!-- Globe Grid Lines -->
+  <circle cx="100" cy="94" r="38" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+  <ellipse cx="100" cy="94" rx="18" ry="38" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+  <line x1="62" y1="94" x2="138" y2="94" stroke="#E2E8F0" stroke-width="1.5"/>
+  
+  <!-- IAF Typography -->
+  <text x="100" y="94" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="28" font-weight="950" fill="#047857" text-anchor="middle" letter-spacing="2">IAF</text>
+  <rect x="42" y="104" width="116" height="18" rx="4" fill="#047857"/>
+  <text x="100" y="117" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#FEF08A" text-anchor="middle" letter-spacing="0.5">ACCREDITED</text>
+  
+  <!-- Subtext -->
+  <text x="100" y="172" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#A7F3D0" text-anchor="middle" letter-spacing="1.2">GLOBAL RECOGNITION</text>
+</svg>

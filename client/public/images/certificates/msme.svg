@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="msmeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+    <linearGradient id="tricolor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9933"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#138808"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Circular Shield -->
+  <circle cx="100" cy="100" r="94" fill="#0F172A" stroke="#EA580C" stroke-width="4"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#F97316" stroke-width="1.5" stroke-dasharray="4 2"/>
+  
+  <!-- Center Plate -->
+  <circle cx="100" cy="100" r="62" fill="#FFFFFF"/>
+  
+  <!-- Tricolor Bar Header -->
+  <rect x="45" y="58" width="110" height="6" fill="#FF9933" rx="2"/>
+  <rect x="45" y="65" width="110" height="6" fill="#0F172A" rx="2"/>
+  <rect x="45" y="72" width="110" height="6" fill="#138808" rx="2"/>
+  
+  <!-- MSME Bold Type -->
+  <text x="100" y="104" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="24" font-weight="950" fill="#EA580C" text-anchor="middle" letter-spacing="1.5">MSME</text>
+  <rect x="42" y="112" width="116" height="16" rx="4" fill="#0F172A"/>
+  <text x="100" y="124" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="800" fill="#FDBA74" text-anchor="middle" letter-spacing="0.5">UDYAM REGISTERED</text>
+  
+  <!-- Subtext -->
+  <text x="100" y="172" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="1">MINISTRY OF MSME, GOI</text>
+</svg>

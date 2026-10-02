@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="isoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Ring -->
+  <circle cx="100" cy="100" r="94" fill="url(#isoBg)" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="4 2"/>
+  
+  <!-- Laurel / Star Accents -->
+  <path d="M 50 145 C 30 115 35 75 60 50" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 150 145 C 170 115 165 75 140 50" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Center Plate -->
+  <circle cx="100" cy="100" r="62" fill="#FFFFFF"/>
+  
+  <!-- Main Text -->
+  <text x="100" y="82" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="1">ISO</text>
+  <text x="100" y="106" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="900" fill="#2563EB" text-anchor="middle">9001:2015</text>
+  <rect x="52" y="114" width="96" height="18" rx="4" fill="#0F172A"/>
+  <text x="100" y="127" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="800" fill="#FDE047" text-anchor="middle" letter-spacing="0.5">CERTIFIED</text>
+  
+  <!-- Bottom Ribbon -->
+  <text x="100" y="172" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#93C5FD" text-anchor="middle" letter-spacing="1.5">QUALITY MANAGEMENT</text>
+</svg>
